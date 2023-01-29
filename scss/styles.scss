@@ -68,6 +68,19 @@ main {
     grid-template-columns: repeat(2, 37.5rem);
     margin-left: 10rem;
     margin-top: 5rem;
+    overflow: hidden;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 70%;
+        border-radius: 624.9375rem;
+        background-color: $primary-softblue;
+        top: 30%;
+        left: 60%;
+        z-index: -1;
+    }
 }
 
 .left__side {
@@ -94,6 +107,7 @@ main {
         transition: all 0.5s ease;
         > span {
             font-size: 13px;
+            text-transform: unset;
         }
         &:hover {
             background-color: white;
@@ -109,6 +123,10 @@ main {
         padding-block: 0.5rem;
         border: none;
         box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+        > span {
+            text-transform: unset;
+        }
         &:hover {
             border: 2px solid black;
         }
