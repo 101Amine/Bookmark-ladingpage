@@ -247,9 +247,9 @@ header {
   background-color: hsl(0deg, 94%, 66%);
   color: white;
   border: 1px solid hsl(0deg, 94%, 66%);
-  transition: all 0.5s ease;
   padding-inline: 2.5rem;
   padding-block: 0.5rem;
+  transition: all 0.5s ease;
 }
 .header-btn:hover {
   background-color: white;
@@ -284,9 +284,15 @@ main {
   padding-block: 0.5rem;
   color: white;
   font-weight: 600;
+  border: 2px solid hsl(231deg, 69%, 60%);
+  transition: all 0.5s ease;
 }
 .actions .blue-overlay > span {
   font-size: 13px;
+}
+.actions .blue-overlay:hover {
+  background-color: white;
+  color: hsl(231deg, 69%, 60%);
 }
 .actions .black-overlay {
   background-color: white;
@@ -294,6 +300,11 @@ main {
   width: 180px;
   font-weight: 600;
   padding-block: 0.5rem;
+  border: none;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.actions .black-overlay:hover {
+  border: 2px solid black;
 }
 
 /*

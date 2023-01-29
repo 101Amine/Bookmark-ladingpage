@@ -51,9 +51,9 @@ header {
     background-color: $primary-softred;
     color: white;
     border: 1px solid $primary-softred;
-    transition: all 0.5s ease;
     padding-inline: 2.5rem;
     padding-block: 0.5rem;
+    transition: all 0.5s ease;
     &:hover {
         background-color: white;
         color: $primary-softred;
@@ -90,8 +90,14 @@ main {
         padding-block: 0.5rem;
         color: white;
         font-weight: 600;
+        border: 2px solid $primary-softblue;
+        transition: all 0.5s ease;
         > span {
             font-size: 13px;
+        }
+        &:hover {
+            background-color: white;
+            color: $primary-softblue;
         }
     }
 
@@ -101,6 +107,11 @@ main {
         width: 180px;
         font-weight: 600;
         padding-block: 0.5rem;
+        border: none;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        &:hover {
+            border: 2px solid black;
+        }
     }
 }
 
