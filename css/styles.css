@@ -257,9 +257,9 @@ header {
 }
 
 /*
-* main styles left side * 
+* first section * 
 */
-main {
+.first__section {
   display: grid;
   grid-template-columns: repeat(2, 37.5rem);
   margin-left: 10rem;
@@ -267,7 +267,7 @@ main {
   overflow: hidden;
   position: relative;
 }
-main::after {
+.first__section::after {
   content: "";
   position: absolute;
   width: 200%;
@@ -325,6 +325,21 @@ main::after {
 }
 
 /*
+* second section * 
+*/
+.second__section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 7rem;
+}
+.second__section > p {
+  max-width: 35rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+/*
 * Reusable styles * 
 */
 .btn {
@@ -340,6 +355,10 @@ h1 {
   font-size: 48px;
   line-height: 1.2;
   color: #252b46;
+}
+
+h2 {
+  font-size: 2.2rem;
 }
 
 p {
