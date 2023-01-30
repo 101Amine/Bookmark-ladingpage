@@ -328,15 +328,36 @@ header {
 * second section * 
 */
 .second__section {
-  max-width: 800px;
+  max-width: 73rem;
   margin: 0 auto;
   text-align: center;
   margin-top: 7rem;
 }
 .second__section > p {
-  max-width: 35rem;
+  max-width: 33rem;
   margin: 0 auto;
   margin-top: 1.5rem;
+}
+.second__section .actions {
+  margin-bottom: 5rem;
+}
+.second__section .actions .ul__items {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: -2.5rem;
+  margin-top: 3rem;
+  gap: 7rem;
+}
+.second__section .actions .ul__items::after {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  width: 65%;
+  height: 0.06rem;
+  bottom: -0.937rem;
+  opacity: 0.3;
 }
 
 /*
@@ -349,6 +370,15 @@ header {
 .btn > span {
   text-transform: uppercase;
   font-size: 0.875rem;
+}
+
+.tab-btn {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 h1 {
